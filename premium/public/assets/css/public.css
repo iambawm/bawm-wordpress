@@ -1,0 +1,984 @@
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Base
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg .aiovg-label-now-playing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;    
+    margin: 0;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px #333;
+    line-height: 1;    
+    color: #fff;
+    font-size: 10px;   
+}
+
+.aiovg .aiovg-label-now-playing:before {
+    padding-right: 0.25rem;    
+    line-height: 1;
+    font-size: 1rem;
+    content: "»";
+}
+
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Card
+ *
+ *--------------------------------------------------------------------------------------------*/
+ .aiovg .aiovg-card {
+	display: flex;
+	flex-direction: column;	
+	border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+  
+.aiovg .aiovg-card:hover {
+	box-shadow: 0 0 #000, 0 0 #000, 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Alerts
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg .aiovg-notice {
+	border-radius: 2px;
+	padding: 0.75rem; 
+}
+
+.aiovg .aiovg-notice-info {	
+	border: 1px solid #bfdbfe; 
+	background-color: #dbeafe; 
+	color: #1f2937;
+}
+
+.aiovg .aiovg-notice-success {	
+	border: 1px solid #a3cfbb; 
+	background-color: #d1e7dd; 
+	color: #0a3622;
+}
+
+.aiovg .aiovg-notice-error {	
+	border: 1px solid #f1aeb5; 
+	background-color: #f8d7da; 	
+	color: #58151c;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	MagnificPopup
+ *
+ *--------------------------------------------------------------------------------------------*/
+.mfp-iframe-scaler iframe {
+    background: url( '../../../../public/assets/images/spinner-dark.gif' ) no-repeat scroll center center #000000 !important;
+}
+
+.aiovg-magnific-popup .mfp-content .mfp-bottom-bar {
+    margin-top: 0;
+    padding: 1.25rem 0.25rem;    
+}
+
+.aiovg-magnific-popup .mfp-bottom-bar .mfp-title {       
+    padding-right: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1.5; 
+}
+
+.aiovg-magnific-popup .mfp-bottom-bar .mfp-title a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.aiovg-magnific-popup .mfp-bottom-bar .mfp-title a:hover,
+.aiovg-magnific-popup .mfp-bottom-bar .mfp-title a:focus {    
+    text-decoration: underline;
+    color: #fff;
+}
+
+.aiovg-magnific-popup .mfp-bottom-bar .mfp-description {  
+    margin-top: 1rem;  
+    line-height: 1.5;
+    color: #ddd;
+}
+
+.aiovg-magnific-popup .mfp-iframe-holder .mfp-close {
+    background-color: transparent;
+}
+
+/* Fade effect */
+.mfp-fade.mfp-bg {
+	-webkit-transition: all 0.15s ease-out;
+	   -moz-transition: all 0.15s ease-out;
+	        transition: all 0.15s ease-out;
+	opacity: 0;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+			transition: all 0.15s ease-out;
+	opacity: 0;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Slick
+ *
+ *--------------------------------------------------------------------------------------------*/
+.slick-loading .slick-list {
+    background: #fff url( '../../../../public/assets/images/spinner.gif' ) center center no-repeat;
+}
+
+.aiovg:not(.aiovg-slick-initialized) .aiovg-slick {
+    display: none; 
+}
+
+/* Arrows */
+.aiovg-slick-prev,
+.aiovg-slick-next {
+    opacity: 0.75;
+    z-index: 9;     
+	cursor: pointer;
+    text-align: center;
+}
+
+.aiovg-slick-prev:hover,
+.aiovg-slick-next:hover {
+    opacity: 1;
+}
+
+.aiovg-slick-prev.slick-disabled,
+.aiovg-slick-next.slick-disabled {
+    opacity: 0.25;
+}
+
+.aiovg-slick-fixed-arrows {    
+    display: block;  
+    position: relative;      
+    margin-bottom: 1rem;
+    width: 100%; 
+}
+
+.aiovg-slick-fixed-arrows .aiovg-slick-prev:not(.slick-hidden),
+.aiovg-slick-fixed-arrows .aiovg-slick-next:not(.slick-hidden) {
+    display: inline-block;    
+}
+
+.aiovg-slick-fixed-arrows .aiovg-slick-prev {
+    margin-right: 0.25rem;
+}
+
+[dir='rtl'] .aiovg-slick-fixed-arrows .aiovg-slick-next {
+    margin-right: 0.25rem;
+}
+
+.aiovg-slick-floating-arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;    
+}
+
+.aiovg-slick-floating-arrows .aiovg-slick-prev,
+.aiovg-slick-floating-arrows .aiovg-slick-next {   
+    position: absolute;
+}
+
+.aiovg-slick-floating-arrows .aiovg-slick-prev {
+    left: 0;
+}
+
+[dir='rtl'] .aiovg-slick-floating-arrows .aiovg-slick-prev {
+    right: 0;
+    left: auto;
+}
+
+.aiovg-slick-floating-arrows .aiovg-slick-next {
+    right: 0;
+}
+
+[dir='rtl'] .aiovg-slick-floating-arrows .aiovg-slick-next {
+    right: auto;
+    left: 0;
+}
+
+.aiovg-slick-floating-arrows .aiovg-slick-prev,
+.aiovg-slick-floating-arrows .aiovg-slick-next {
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+
+/* Dots */
+ul.aiovg-slick-dots {
+	display: flex;
+    flex-wrap: wrap;	
+    gap: 0.25rem;
+    justify-content: center;
+    margin: 0;
+	margin-top: 1rem;   
+    padding: 0;   
+    width: 100%; 
+    list-style: none;
+}
+
+ul.aiovg-slick-dots li {    
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;  
+    list-style: none; 
+}
+
+ul.aiovg-slick-dots li .aiovg-slick-dot {
+    opacity: 0.25; 
+	line-height: 1;
+}
+
+ul.aiovg-slick-dots li.slick-active .aiovg-slick-dot {
+    opacity: 0.75;
+}
+
+ul.aiovg-slick-dots li .aiovg-slick-dot:hover {
+    opacity: 1;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Playlists
+ *
+ *--------------------------------------------------------------------------------------------*/
+aiovg-playlist-button {
+	box-sizing: border-box;
+	display: block;
+	position: relative;		
+    margin-right: auto;
+}
+
+aiovg-playlist-button .aiovg-button-toggle-dropdown {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    min-width: 100px;
+}
+
+aiovg-playlist-button:not([loaded]) .aiovg-button-toggle-dropdown {
+	pointer-events: none;
+	animation: aiovgPulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+aiovg-playlist-button .aiovg-dropdown {
+	position: absolute;
+    top: 100%;
+    right: 0;
+	left: 0;
+	z-index: 99999;
+	margin-top: 1px;	
+	border: 1px solid #9ca3af;	
+    border-radius: 3px;	
+	box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    background-color: #fff;
+    width: fit-content;
+    min-width: 240px;
+    max-width: 320px;    
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+  
+aiovg-playlist-button .aiovg-dropdown-header {
+    display: flex;	
+	gap: 0.35rem;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f6;
+	padding: 0.75rem;	
+}
+  
+aiovg-playlist-button .aiovg-dropdown-header .aiovg-dropdown-status {
+    display: flex;
+    flex-grow: 1;
+    gap: 0.5rem;
+    align-items: center;    
+    font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+aiovg-playlist-button .aiovg-dropdown-header button,
+aiovg-playlist-button .aiovg-dropdown-header button:hover,
+aiovg-playlist-button .aiovg-dropdown-header button:focus {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+	background-color: transparent;
+	background-image: none;
+    padding: 0;
+    line-height: 1;
+}
+  
+aiovg-playlist-button .aiovg-dropdown-header button:hover {
+	color: #3b82f6;
+}
+  
+aiovg-playlist-button .aiovg-dropdown-body {
+    max-height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+aiovg-playlist-button .aiovg-dropdown-body label {
+	display: flex;
+	gap: 0.35rem;
+	align-items: center;	
+	margin: 0;
+	border-bottom: 1px solid #f3f4f6;
+    cursor: pointer;
+	padding: 0.5rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+aiovg-playlist-button .aiovg-dropdown-body div:nth-last-child(2) label {
+    border-bottom: none;
+}
+
+aiovg-playlist-button .aiovg-dropdown-body .aiovg-item-label:hover {
+	background-color: #3b82f6;
+	color: #fff;
+}
+
+aiovg-playlist-button .aiovg-dropdown-body input[type="checkbox"] {
+    margin: 0;
+}
+
+aiovg-playlist-button .aiovg-dropdown-body .aiovg-dropdown-no-items {
+    pointer-events: none;
+}
+
+aiovg-playlist-button .aiovg-dropdown-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border-top: 1px solid #f3f4f6;
+	padding: 0.75rem;
+}
+
+aiovg-playlist-button .aiovg-dropdown-footer .aiovg-form-group {
+    display: flex;
+    gap: 0.35rem;
+	align-items: center;	
+}
+
+aiovg-playlist-button .aiovg-dropdown-footer input[type="text"] {
+	flex-grow: 1;
+}
+
+aiovg-playlist-button .aiovg-dropdown-footer input[type="text"],
+aiovg-playlist-button .aiovg-dropdown-footer button {
+    margin: 0;
+	line-height: 1;
+}
+
+aiovg-playlist-button .aiovg-dropdown-footer .aiovg-field-invalid {
+    border: 1px solid #e80000;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Template: Popup
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-videos-template-popup .aiovg-item-video,
+.aiovg-videos-template-popup .aiovg-popup-item {	
+    cursor: pointer;
+}
+
+.aiovg-videos-template-popup .aiovg-disable-link-title .aiovg-link-title,
+.aiovg-videos-template-popup .aiovg-responsive-container {
+    pointer-events: none;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Template: Slider
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-videos-template-slider .aiovg-section-videos {
+    position: relative;
+}
+
+.aiovg-videos-template-slider .aiovg-item-video {	
+    cursor: pointer;
+}
+
+/* Layout: Popup */
+.aiovg-slider-layout-popup .aiovg-disable-link-title .aiovg-link-title,
+.aiovg-slider-layout-popup .aiovg-responsive-container {
+    pointer-events: none;
+}
+
+/* Layout: Compact */
+.aiovg-slider-layout-compact .aiovg-section-player {
+    margin-bottom: 1.5rem;
+}
+
+.aiovg-slider-layout-compact .aiovg-section-player .aiovg-player-title,
+.aiovg-slider-layout-compact .aiovg-section-player .aiovg-player-description {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.aiovg-slider-layout-compact .aiovg-disable-link-title .aiovg-link-title,
+.aiovg-slider-layout-compact .aiovg-responsive-container {
+    pointer-events: none;
+}
+
+/* Layout: Inline */
+.aiovg-slider-layout-inline .aiovg-player-position-left .aiovg-row {
+    position: relative;
+    margin: 0 1px;
+}
+
+.aiovg-slider-layout-inline .aiovg-item-video .aiovg-player-title,
+.aiovg-slider-layout-inline .aiovg-item-video .aiovg-player-description {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .aiovg-slider-layout-inline .aiovg-player-position-left .aiovg-col-p-40 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 1rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .aiovg-slider-layout-inline .aiovg-player-position-left .aiovg-player-title {
+        margin-top: 0;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Template: Playlist
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-playlist {	
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);	
+	width: 100%;    
+}
+
+.aiovg-playlist .aiovg-section-player,
+.aiovg-playlist .aiovg-section-videos {
+	flex: 0 0 auto;
+    width: 100%;
+}
+
+.aiovg-playlist .aiovg-section-player {
+    min-width: 100px;
+}
+
+.aiovg-playlist .aiovg-section-videos {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.aiovg-playlist .aiovg-item-video {
+    cursor: pointer;
+    padding: 0.75rem;	
+}
+
+.aiovg-playlist .aiovg-item-video .aiovg-image {
+    position: relative;
+}
+
+.aiovg-playlist .aiovg-item-video img {    
+    background: #f0f0f0;
+    width: 100px;
+    height: auto;
+}
+
+.aiovg-playlist .aiovg-item-video .aiovg-caption {    
+    margin-left: 0.75rem;
+    padding: 0;
+}
+
+.aiovg-playlist .aiovg-item-video .aiovg-title {
+    pointer-events: none;
+}
+
+.aiovg-playlist .aiovg-item-video .aiovg-title,
+.aiovg-playlist .aiovg-item-video .aiovg-excerpt {
+	word-break: break-word;
+}
+
+/* Position: Right */
+@media only screen and (min-width: 768px) {
+	.aiovg-playlist.aiovg-playlist-right .aiovg-section-videos {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+/* Theme: Dark */
+.aiovg-playlist.aiovg-playlist-dark {
+    background-color: #444;
+    color: #eee;
+}
+
+.aiovg-playlist.aiovg-playlist-dark .aiovg-item-video {
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #333;
+}
+
+.aiovg-playlist.aiovg-playlist-dark .aiovg-item-video:hover {	
+    border-top: 1px solid #444;
+    background-color: #333;
+}
+
+.aiovg-playlist.aiovg-playlist-dark .aiovg-item-video.aiovg-active {	  
+    border-top: 1px solid #444; 
+    background-color: #333;
+}
+
+.aiovg-playlist.aiovg-playlist-dark .aiovg-item-video:last-child {
+    border-bottom: 0;
+}
+
+.aiovg-playlist.aiovg-playlist-dark a,
+.aiovg-playlist.aiovg-playlist-dark a:hover,
+.aiovg-playlist.aiovg-playlist-dark a:focus {
+    color: #eee;
+}
+
+/* Theme: Light */
+.aiovg-playlist.aiovg-playlist-light {
+	background-color: #fff;
+    color: #333;    
+}
+
+.aiovg-playlist.aiovg-playlist-light .aiovg-item-video {
+    border-top: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+.aiovg-playlist.aiovg-playlist-light .aiovg-item-video:hover {	
+    border-top: 1px solid #fff;
+    background-color: #fafafa;
+}
+
+.aiovg-playlist.aiovg-playlist-light .aiovg-item-video.aiovg-active {	
+    border-top: 1px solid #fff;
+    background-color: #fafafa;
+}
+
+.aiovg-playlist.aiovg-playlist-light .aiovg-item-video:last-child {
+    border-bottom: 0;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Template: Compact
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-videos-template-compact .aiovg-section-player {
+    margin-bottom: 1.5rem;
+}
+
+.aiovg-videos-template-compact .aiovg-section-player .aiovg-player-title,
+.aiovg-videos-template-compact .aiovg-section-player .aiovg-player-description {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.aiovg-videos-template-compact .aiovg-item-video {
+    cursor: pointer;
+}
+
+.aiovg-videos-template-compact .aiovg-disable-link-title .aiovg-link-title,
+.aiovg-videos-template-compact .aiovg-responsive-container {
+    pointer-events: none;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Login Form
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-login-form #loginform {
+    max-width: 320px;
+}
+
+.aiovg-login-form .login-username label,
+.aiovg-login-form .login-password label {
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+.aiovg-login-form  #user_login,
+.aiovg-login-form  #user_pass {   
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	User Dashboard
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-user-dashboard .aiovg-search-form {
+    max-width: 320px;
+}
+
+.aiovg-user-dashboard .aiovg-button-add-video {
+    margin-left: auto;
+}
+
+.aiovg-user-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;    
+}
+
+.aiovg-user-dashboard th,
+.aiovg-user-dashboard td {
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+.aiovg-user-dashboard .aiovg-col-image {
+    display: none;
+    width: 100px;
+}
+
+@media only screen and (min-width: 600px) {
+	.aiovg-user-dashboard .aiovg-col-image {
+        display: table-cell;
+    }
+}
+
+.aiovg-user-dashboard .aiovg-col-caption .aiovg-title {
+	margin: 0;
+    font-size: 1.125rem;
+	line-height: 1.75rem;
+}
+
+.aiovg-user-dashboard .aiovg-col-caption .aiovg-meta,
+.aiovg-user-dashboard .aiovg-col-caption .aiovg-category,
+.aiovg-user-dashboard .aiovg-col-caption .aiovg-tag {
+	margin-top: 0.25rem;
+}
+
+.aiovg-user-dashboard .aiovg-col-caption .aiovg-description {
+	margin-top: 0.5rem;
+}
+
+.aiovg-user-dashboard .aiovg-col-action {
+    width: 100px;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Video Form
+ *
+ *--------------------------------------------------------------------------------------------*/
+.aiovg-video-form .aiovg-form-group {
+    display: block;
+	margin-bottom: 1.25rem;
+}
+
+.aiovg-video-form .aiovg-form-label {
+    display: block;
+    font-weight: bold;
+}
+
+.aiovg-video-form .aiovg-form-label,
+.aiovg-video-form .aiovg-form-description {
+    margin-bottom: 0.25rem;
+}
+
+.aiovg-video-form input[type="text"],
+.aiovg-video-form select,
+.aiovg-video-form textarea {    
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+
+.aiovg-video-form input[type="checkbox"],
+.aiovg-video-form input[type="radio"],
+.aiovg-video-form button {
+    margin: 0;
+}
+
+.aiovg-video-form .aiovg-checklist {
+    box-sizing: border-box;    
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+	padding: 0.25rem 0.75rem;
+    width: 100%;
+    min-height: 30px;
+	max-height: 100px;	
+	overflow-y: auto;
+    list-style: none !important;
+}
+
+.aiovg-video-form .aiovg-checklist ul,
+.aiovg-video-form .aiovg-checklist li {
+    margin: 0;
+    padding: 0;
+    list-style: none !important;
+}
+
+.aiovg-video-form .aiovg-checklist ul.children {
+	margin-left: 1.25rem;
+}
+
+.aiovg-video-form .aiovg-checklist li::marker {
+    content: "";
+}
+
+.aiovg-video-form .aiovg-checklist label {
+    display: flex;
+    gap: 0.35rem;
+    align-items: center;
+    margin: 0.35rem 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.aiovg-video-form span.aiovg-field-date,
+.aiovg-video-form span.aiovg-field-magic {	
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;    
+}
+
+.aiovg-video-form .aiovg-upload-status {
+	display: none;
+}
+
+.aiovg-video-form .aiovg-uploading .aiovg-button-upload {
+	pointer-events: none;
+}
+
+.aiovg-video-form .aiovg-uploading .aiovg-upload-status {
+    display: flex; 
+    gap: 0.5rem;
+    align-items: center; 
+    margin-top: 0.25rem;
+    height: 100%; 
+    font-size: small;      
+}
+
+.aiovg-video-form .aiovg-required-symbol,
+.aiovg-video-form .aiovg-text-highlight,
+.aiovg-video-form .aiovg-field-error {
+    color: #e80000;
+}
+
+.aiovg-video-form .aiovg-field-error {
+    display: none;
+    margin-top: 0.25rem;
+    font-size: 90%;
+}
+
+.aiovg-video-form .aiovg-field-invalid .aiovg-field-error {
+    display: block;    
+}
+
+.aiovg-video-form .aiovg-field-invalid .aiovg-form-label,
+.aiovg-video-form .aiovg-field-invalid .aiovg-form-checkbox {
+    color: #e80000;
+}
+
+.aiovg-video-form .aiovg-field-invalid .aiovg-form-control {
+    border: 1px solid #e80000;
+}
+
+.aiovg-video-form .aiovg-toggle-fields {
+    display: none;
+}
+
+/* Action Buttons */
+#aiovg-field-action-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#aiovg-field-action-buttons a {
+    margin-left: auto;
+}
+
+/* Thumbnail Generator */
+#aiovg-thumbnail-generator {
+    margin-top: 1rem;
+}
+
+#aiovg-thumbnail-generator .aiovg-header {    
+    display: flex;    
+    gap: 0.5rem;
+    align-items: center;    
+    font-size: 90%;
+}
+
+#aiovg-thumbnail-generator .aiovg-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 481px) {
+    #aiovg-thumbnail-generator .aiovg-body { 
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+@media only screen and (min-width: 768px) {
+    #aiovg-thumbnail-generator .aiovg-body { 
+        grid-template-columns: repeat(4, 1fr);
+    }    
+}
+
+#aiovg-thumbnail-generator .aiovg-item {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#aiovg-thumbnail-generator .aiovg-item:hover {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+#aiovg-thumbnail-generator img {
+	display: block;
+	width: 100%;
+}
+
+#aiovg-thumbnail-generator input[type="radio"] {
+    pointer-events: none;
+    display: block;
+    margin: 0.5rem auto;    
+}
+
+#aiovg-thumbnail-generator .aiovg-footer {
+    margin-top: 1rem;
+}
+
+#aiovg-thumbnail-generator.aiovg-processing .aiovg-body,
+#aiovg-thumbnail-generator.aiovg-processing .aiovg-footer {
+    display: none;
+}
+
+/* Thumbnail Generator: Capture Image */
+#aiovg-html5-thumbnail-generator.aiovg-item { 
+    border: none;
+}
+
+#aiovg-html5-thumbnail-generator button {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%; 
+    min-height: 100px;   
+    font-size: 1rem;
+}
+
+/* Thumbnail Generator: Modal */
+#aiovg-thumbnail-generator-modal {
+	position: relative;  	
+	margin: 2rem auto;
+	border-radius: 2px;
+	background-color: #fff;
+	padding: 1rem;  
+	width: auto;
+	max-width: 640px; 
+}
+
+#aiovg-thumbnail-generator-modal .aiovg-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#aiovg-thumbnail-generator-modal .aiovg-notice {
+	margin-top: 1.5rem;
+}
+
+#aiovg-thumbnail-generator-player {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#aiovg-thumbnail-generator-canvas {
+    display: none;
+}
+
+#aiovg-thumbnail-generator-modal .aiovg-modal-actions .aiovg-pull-left,
+#aiovg-thumbnail-generator-modal .aiovg-modal-actions .aiovg-pull-right {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+/*----------------------------------------------------------------------------------------------
+ *
+ *	Deprecated
+ *
+ *--------------------------------------------------------------------------------------------*/
+/* Template: Slider */
+.aiovg-slick.aiovg-row {
+    margin: -0.75rem;
+}
+
+/* Video Form */
+@media only screen and (min-width: 481px) {
+    .aiovg-video-form .aiovg-row .aiovg-button-upload {
+        margin-left: 5px;
+    }
+}
